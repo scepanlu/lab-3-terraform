@@ -1,6 +1,6 @@
 terraform {
   backend "remote" {
-    organization = "ls-terra"
+    organization = "ls-sdn"
 
     workspaces {
       name = "development"
