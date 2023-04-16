@@ -1,8 +1,13 @@
-terraform {
-  backend "remote" {
-    organization = "fc-terra"
-    workspaces {
-      name = "project0"
-    }
-  }
+terraform {
+  backend "remote" {
+    organization = "ls-terra"
+
+    workspaces {
+      name = "development"
+    }
+
+    workspaces {
+      name = "production"
+    }
+  }
 }
