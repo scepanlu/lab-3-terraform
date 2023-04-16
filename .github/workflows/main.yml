@@ -1,0 +1,17 @@
+name: My Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test Code
+        run: terraform plan
+      - name: Validate Code
+        run: terraform validate
+      - name: Deploy Infrastructure
+        run: terraform apply
